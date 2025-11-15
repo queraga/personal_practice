@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.themeBox {
+  padding: 40px;
+  margin: 40px auto;
+  width: 400px;
+  text-align: center;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.lightBox {
+  background-color: white;
+  color: black;
+}
+
+.darkBox {
+  background-color: black;
+  color: white;
+}
+
+.btnTheme {
+  margin: 25px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.darkTheme {
+  margin-top: 25px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.lightBtn {
+  background-color: #4c8bf5;
+  color: #fff;
+}
+
+.darkBtn {
+  background-color: #bb86fc;
+  color: #222;
+}
+
+.btnTheme:hover {
+  transform: scale(1.05);
+}
