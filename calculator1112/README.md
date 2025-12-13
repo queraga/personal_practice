@@ -29,3 +29,5 @@ src/
 
 ## Notes
 - Division by zero should be handled (show an error or a special message).
+
+✍️ Author Queraga https://github.com/queraga 📍 Berlin, Germany
