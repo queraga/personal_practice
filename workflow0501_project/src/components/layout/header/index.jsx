@@ -1,12 +1,5 @@
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Box,
-  Container,
-} from "@mui/material";
-import { Link } from "react-router-dom";
+import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   const cartCount = 0;
@@ -30,20 +23,29 @@ function Header() {
           sx={{
             display: "flex",
             gap: 2,
-            "& button": {
+            "& .MuiButton-root": {
               fontSize: "15px",
               color: "rgba(255, 255, 255, 0.5)",
               textTransform: "none",
-              "&:hover": {
-                color: "#fff",
-                backgroundColor: "transparent",
-              },
+            },
+            "& .MuiButton-root:hover": {
+              color: "rgba(255, 255, 255, 1)",
+              backgroundColor: "transparent",
+            },
+            "& .MuiButton-root.active": {
+              color: "rgba(255, 255, 255, 1)",
             },
           }}
         >
-          <Button>Main</Button>
-          <Button>Basket</Button>
-          <Button>Contacts</Button>
+          <Button component={NavLink} to="/">
+            Main
+          </Button>
+          <Button component={NavLink} to="/basket">
+            Basket
+          </Button>
+          <Button component={NavLink} to="/contacts">
+            Contacts
+          </Button>
         </Box>
       </Toolbar>
     </AppBar>
