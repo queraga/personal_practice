@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Air Zoom Pegasus 40",
+      "price": 360,
+      "image": "https://i.imgur.com/PReV51j.png"
+    },
+    {
+      "id": 2,
+      "name": "Nike Air Max 90",
+      "price": 234,
+      "image": "https://i.imgur.com/PReV51j.png"
+    },
+    {
+      "id": 3,
+      "name": "Nike React Infinity Run Flyknit",
+      "price": 134,
+      "image": "https://i.imgur.com/PReV51j.png"
+    },
+    {
+      "id": 4,
+      "name": "Nike ZoomX Vaporfly Next%",
+      "price": 175,
+      "image": "https://i.imgur.com/PReV51j.png"
+    }
+  ],
+  "cartData": []
+}
