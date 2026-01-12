@@ -32,5 +32,4 @@ function ProductCard({ product, onAdd }) {
     </div>
   );
 }
-
 export default ProductCard;

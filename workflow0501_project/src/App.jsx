@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/layout/header";
 import { Routes, Route } from "react-router-dom";
 import MainPage from "../src/pages/MainPage";
-import BasketPage from "../src/pages/BasketPage";
+import BasketPage from "../src/pages/basketPage/index";
 import ContactsPage from "../src/pages/contacts/index";
 import Footer from "./components/layout/footer";
 

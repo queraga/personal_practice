@@ -6,6 +6,7 @@ import { setProducts } from "../store/productsSlice";
 import { useSelector } from "react-redux";
 import ProductCard from "../components/layout/productCard/index";
 import { Grid } from "@mui/material";
+import { addToCart } from "../store/cartSlice";
 
 function MainPage() {
   const dispatch = useDispatch();
@@ -20,7 +21,9 @@ function MainPage() {
       .catch((err) => console.error(err));
   }, [dispatch]);
 
-  console.log(products);
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+  };
 
   return (
     <Box
@@ -52,7 +55,7 @@ function MainPage() {
         <Grid container spacing={5} justifyContent="center">
           {products.map((product) => (
             <Grid item key={product.id} md={3}>
-              <ProductCard product={product} />
+              <ProductCard product={product} onAdd={handleAddToCart} />
             </Grid>
           ))}
         </Grid>
